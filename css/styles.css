@@ -495,6 +495,10 @@ a {
     background-color: transparent;
     padding-left: 16px;
     padding-right: 16px;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #ffffff;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -507,7 +511,7 @@ a {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.04em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .footer-button {
@@ -596,7 +600,7 @@ a {
     right: 24px;
     padding: 0;
     cursor: pointer;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-icon {
@@ -611,7 +615,7 @@ a {
 
 .modal-close:hover .close-icon,
 .modal-close:focus .close-icon {
-    fill: #f4f4fd;
+    fill: #ffffff
 }
 
 .input-wrapper {
@@ -659,6 +663,7 @@ a {
     border-radius: 4px;
     padding-left: 38px;
     padding-right: 16px;
+    background-color: transparent;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -677,8 +682,18 @@ a {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding: 8px 16px;
+    background-color: transparent;
     outline: transparent;
     resize: none;
+    font-size: 12px; 
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-comment:focus {
+    border-color: #4D5AE5;
 }
 
 .modal-comment::placeholder {
